@@ -34,8 +34,9 @@ Some interesting things to discuss here, mostly about the left-hand-graphs.
 *Fun (unrigorous) deduction*
 
 From my data, I hypothesize that a suitable handicap to enable a 1000-2000 ELO player to compete with a 2000+ ELO player fairly would be the following time control:
-|**2k+ player:**|3 seconds +3s increment|
-|**1-2k player:**|unlimited time|
+
+**2k+ player:** 3 seconds +3s increment
+**1-2k player:** unlimited time
 
 This would mean that the expert player would always have about 3 seconds on the clock, which corresponds to the region of the graph where the expert's error rate approaches the average plateaued error of the intermediate player.
 Of course, this logic is riddled with flawed assumptions, but it is just a bit of fun.
@@ -57,15 +58,19 @@ Limitations/Where do I go from here?
 ----
 
 1. Datapoints
+
 Because of the vast quantities of games being analysed, I had to rely on lichess games which had already been evaluated by a computer. This comprises only about 2-5% of the games on the database. The size of my sample pool was then further reduced with my time control and ELO filters, resulting in occaisionally surprisingly sparse datasets considering the 68 million (!) games that are considered at the beginning.
 
 The way to fix this would either be to implement my own eval (and wait multiple days for each run of the program to finish) or just to take in even more lichess data. I only used the data from 1 month for this project - there are about 30 more months with clock and eval data available, so I could potentially increase my datapoints by a factor of 30 if I wanted to. However, this involves some not-inconsiderable busywork (each month is about 150GB and takes me ages to download and clear space for on my hard drive) so its not something I'm overly concerned about.
 
 2. Beserk/time outliers
+
 Beserk games (see https://lichess.org/tournament/help?system=arena ) create anomalous dips at the 50% mark. I could code up a check to spot and eliminate beserk games from the dataset. However, the beserk anomaly is not only minor, it is also interesting and perhaps does not merit a surgical removal. It has very little impact on the most interesting sections of the plot (the start and end of each game) so I view it as best left in. Some may disagree.
 
 3. Speed
+
 Various optimizations are possible, especially with the data serialization and plotting, which I scraped together in somewhat of a hurry. Using "eval" to rebuild dicts from text files is extremely bad practice generally speaking, and some sort of database rather than a crude textfile would be preferable.
 
 4. Fitting/hypothesizing
+
 I didn't do any mathematical fitting yet, or make hypotheses about other time controls and then test them with data. I just haven't had the time yet, since I am busy with exams.
