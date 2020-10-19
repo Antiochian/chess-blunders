@@ -3,6 +3,7 @@ Examining blunder rates in 68 million games of online chess and confirming my su
 |Sample graph:|
 |:---:|
 |![3min result](3min_game_comparison.png)|
+|(Alarm plays at 20s remaining)|
 
 What is it?
 ----
@@ -24,7 +25,7 @@ Results
 |>2k ELO |230,211| 80,071 | 77,829 |
 
 Some interesting things to discuss here, mostly about the left-hand-graphs.
- - There is a noticeable "bump" at the 20s mark for 3min games and the 40s mark for 5min games - this is the exact same time the lichess website plays a loud alarm beeping sound and flashes the clock red to warn you you are low on time. I hypothesise this interuption can panic players and cause them to play knee-jerk, illconsidered moves, resulting in a bump in the blunder rates (since I know that I do the same!).
+ - There is a noticeable "bump" at the 20s mark for 3min games, the 40s mark for 5min games, and the 60s mark for 10min games - this is the exact same time the lichess website plays a loud alarm beeping sound and flashes the clock red to warn you you are low on time. I hypothesise this interuption can panic players and cause them to play knee-jerk, illconsidered moves, resulting in a bump in the blunder rates (since I know that I do the same!).
  - As expected, generally speaking, the blunder rate increases with time, with very few players blundering in the opening stages and most blunders occuring in the last few seconds of a game as the time situation becomes desperate.
  - It is interesting to note the blunder rate plateaus for <1k and 1-2k elo players, but in fact does not plateau for expert players (>2k elo, top 10% of userbase). My hypothesis for this is that beginner players generally gain little advantage from extra time - if they havent found the best move in 20 seconds, they probably wont find it in 20 minutes either. However, expert players probably could play an (almost) blunder-free game if they spent an hour carefully considering any move - they are the only demographic which is actually suffering from time pressure throughout the entire match, not just in the final stages. An alternate hypothesis could be that expert players ration their time more ruthlessly and strategically.
  - There is a small dip in blunder-rates at 50% of starting time for all time controls and ELOs. This puzzled me at first, until I realised what it was - on lichess.org online tourneys, one can choose to "go beserk" and gamble half their time for double the rating points if they manage to win anyway. These "beserkers" are playing their first few moves at the 50% of time remaining mark, and although their numbers are small, this is enough to slightly drag down the average blunder rate at this point. [Description of the Beserk mechanic here](https://lichess.org/tournament/help?system=arena)
