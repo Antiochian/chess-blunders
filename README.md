@@ -1,7 +1,8 @@
 # chess-blunders
 Examining blunder rates in 68 million games of online chess
-Sample graph:
-![3min result](3min_game_comparison.png)
+|Sample graph:|
+|:---:|
+|![3min result](3min_game_comparison.png)|
 
 What is it?
 ----
