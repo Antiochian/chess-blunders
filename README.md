@@ -9,7 +9,12 @@ The y axis is the normalised blunder chance - the total number of blunders over 
 Results
 ---
 (Still need to add some more results for 5min and 10min time controls, and more precise documentation and graph-labelling)
-![3min result](3min_game_comparison.png)
+
+|By time (All ELOs)|By ELO (All times)|
+|:---:|:---:|
+|![3min result](3min_game_comparison.png)|![<1k result](1k_time_comparison.png) |
+|![5min result](5min_game_comparison.png)|![1-2k result](1-2k_time_comparison.png) |
+|![10min result](10min_game_comparison.png)|![>2k result](2k+_time_comparison.png) |
 
 |Legend | Matching games analysed (3min)| Matching games analysed (5min)| Matching games analysed (10min)|
 |:---:|:---:|:---:|:---:|
