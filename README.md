@@ -11,6 +11,12 @@ Results
 (Still need to add some more results for 5min and 10min time controls, and more precise documentation and graph-labelling)
 ![3min result](3min_game_comparison.png)
 
+|Legend | Matching games analysed (3min)| Matching games analysed (5min)| Matching games analysed (10min)|
+|:---:|:---:|:---:|:---:|
+|<1k ELO|21,762| tbc | tbc |
+|1-2k ELO |704,164| tbc | tbc |
+|>2k ELO |230,211| tbc | tbc |
+
 Some interesting things to discuss here:
  - There is a noticeable "bump" at the 20s mark for 3min games and the 40s mark for 5min games - this is the exact same time the lichess website plays a loud alarm beeping sound and flashes the clock red to warn you you are low on time. I hypothesise this interuption can panic players and cause them to play knee-jerk, illconsidered moves, resulting in a bump in the blunder rates (since I know that I do the same!).
  - As expected, generally speaking, the blunder rate increases with time, with very few players blundering in the opening stages and most blunders occuring in the last few seconds of a game as the time situation becomes desperate.
