@@ -23,6 +23,16 @@ Some interesting things to discuss here:
  - It is interesting to note the blunder rate plateaus for <1k and 1-2k elo players, but in fact does not plateau for expert players (>2k elo, top 10% of userbase). My hypothesis for this is that beginner players generally gain little advantage from extra time - if they havent found the best move in 20 seconds, they probably wont find it in 20 minutes either. However, expert players probably could play an (almost) blunder-free game if they spent an hour carefully considering any move - they are the only demographic which is actually suffering from time pressure throughout the entire match, not just in the final stages. An alternate hypothesis could be that expert players ration their time more ruthlessly and strategically.
  - There is a strange dip in blunder rates at the "50% of time remaining mark" for all ELOs. I do not know from whence this came, and determining (a) whether its some program error or (b) some natural phenomena is currently my main priority.
  
+*Fun (unrigorous) deduction*
+From my data, I hypothesize that a suitable handicap to enable a 1000-2000 ELO player to compete with a 2000+ ELO player fairly would be the following time control:
+|**2k+ player:**|3 seconds +3s increment|
+|**1-2k player:**|unlimited time|
+
+This would mean that the expert player would always have about 3 seconds on the clock, which corresponds to the region of the graph where the expert's error rate approaches the average plateaued error of the intermediate player.
+
+Of course, this logic is riddled with flawed assumptions, but it is just a bit of fun so I'm not too concerned.
+ 
+ 
 How does it work?
 ----
 
