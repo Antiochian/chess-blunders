@@ -1,5 +1,5 @@
 # chess-blunders
-Examining blunder rates in 68 million games of online chess
+Examining blunder rates in 68 million games of online chess and confirming my suspicion that the lichess "low time" alarm sound really does make people play worse.
 |Sample graph:|
 |:---:|
 |![3min result](3min_game_comparison.png)|
