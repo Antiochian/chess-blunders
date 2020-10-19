@@ -36,6 +36,7 @@ Some interesting things to discuss here, mostly about the left-hand-graphs.
 From my data, I hypothesize that a suitable handicap to enable a 1000-2000 ELO player to compete with a 2000+ ELO player fairly would be the following time control:
 
 **2k+ player:** 3 seconds +3s increment
+
 **1-2k player:** unlimited time
 
 This would mean that the expert player would always have about 3 seconds on the clock, which corresponds to the region of the graph where the expert's error rate approaches the average plateaued error of the intermediate player.
