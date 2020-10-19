@@ -1,5 +1,7 @@
 # chess-blunders
 Examining blunder rates in 68 million games of online chess
+Sample graph:
+![3min result](3min_game_comparison.png)
 
 What is it?
 ----
@@ -8,8 +10,6 @@ The y axis is the normalised blunder chance - the total number of blunders over 
 
 Results
 ---
-(Still need to add some more results for 5min and 10min time controls, and more precise documentation and graph-labelling)
-
 |By time (All ELOs)|By ELO (All times)|
 |:---:|:---:|
 |![3min result](3min_game_comparison.png)|![<1k result](1k_time_comparison.png) |
@@ -22,7 +22,7 @@ Results
 |1-2k ELO |704,164| 905,794 | 870,375 |
 |>2k ELO |230,211| 80,071 | 77,829 |
 
-Some interesting things to discuss here:
+Some interesting things to discuss here, mostly about the left-hand-graphs.
  - There is a noticeable "bump" at the 20s mark for 3min games and the 40s mark for 5min games - this is the exact same time the lichess website plays a loud alarm beeping sound and flashes the clock red to warn you you are low on time. I hypothesise this interuption can panic players and cause them to play knee-jerk, illconsidered moves, resulting in a bump in the blunder rates (since I know that I do the same!).
  - As expected, generally speaking, the blunder rate increases with time, with very few players blundering in the opening stages and most blunders occuring in the last few seconds of a game as the time situation becomes desperate.
  - It is interesting to note the blunder rate plateaus for <1k and 1-2k elo players, but in fact does not plateau for expert players (>2k elo, top 10% of userbase). My hypothesis for this is that beginner players generally gain little advantage from extra time - if they havent found the best move in 20 seconds, they probably wont find it in 20 minutes either. However, expert players probably could play an (almost) blunder-free game if they spent an hour carefully considering any move - they are the only demographic which is actually suffering from time pressure throughout the entire match, not just in the final stages. An alternate hypothesis could be that expert players ration their time more ruthlessly and strategically.
@@ -35,8 +35,7 @@ From my data, I hypothesize that a suitable handicap to enable a 1000-2000 ELO p
 |**1-2k player:**|unlimited time|
 
 This would mean that the expert player would always have about 3 seconds on the clock, which corresponds to the region of the graph where the expert's error rate approaches the average plateaued error of the intermediate player.
-
-Of course, this logic is riddled with flawed assumptions, but it is just a bit of fun so I'm not too concerned.
+Of course, this logic is riddled with flawed assumptions, but it is just a bit of fun.
  
  
 How does it work?
@@ -55,7 +54,7 @@ Limitations/Where do I go from here?
 ----
 
 1. Datapoints
-Because of the vast quantities of games being analysed, I had to rely on lichess games which had already been evaluated by a computer. This comprises only about 1% of the games on the database. The size of my sample pool was then further reduced with my time control and ELO filters, resulting in occaisionally surprisingly sparse datasets considering the 68 million (!) games that are considered at the beginning.
+Because of the vast quantities of games being analysed, I had to rely on lichess games which had already been evaluated by a computer. This comprises only about 2-5% of the games on the database. The size of my sample pool was then further reduced with my time control and ELO filters, resulting in occaisionally surprisingly sparse datasets considering the 68 million (!) games that are considered at the beginning.
 
 The way to fix this would either be to implement my own eval (and wait multiple days for each run of the program to finish) or just to take in even more lichess data. I only used the data from 1 month for this project - there are about 30 more months with clock and eval data available, so I could potentially increase my datapoints by a factor of 30 if I wanted to. However, this involves some not-inconsiderable busywork (each month is about 150GB and takes me ages to download and clear space for on my hard drive) so its not something I'm overly concerned about.
 
