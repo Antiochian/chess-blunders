@@ -11,7 +11,7 @@ The y axis is the normalised blunder chance - the total number of blunders over 
 Results
 ---
 (Still need to add some more results for 5min and 10min time controls)
-![3min result](3min game comparison.png)
+![3min result]('3min_game_comparison.png')
 
 Some interesting things to discuss here:
  - There is a noticeable "bump" at the 20s mark for 3min games and the 40s mark for 5min games - this is the exact same time the lichess website plays a loud alarm beeping sound and flashes the clock read to warn you you are low on time. I hypothesise this interupption can panic players and cause them to play knee-jerk, illconsidered moves, resulting in a bump in the blunder rates.
