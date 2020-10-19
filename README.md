@@ -8,7 +8,7 @@ The y axis is the normalised blunder chance - the total number of blunders over 
 
 Results
 ---
-(Still need to add some more results for 5min and 10min time controls)
+(Still need to add some more results for 5min and 10min time controls, and more precise documentation and graph-labelling)
 ![3min result](3min_game_comparison.png)
 
 Some interesting things to discuss here:
