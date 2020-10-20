@@ -47,7 +47,7 @@ How does it work?
 ----
 
 I downloaded 68 million games of online chess from the lichess database: [https://database.lichess.org/](https://database.lichess.org/)
-I wrote a program to go through these games and filter them for various parameters (ELO, time controls, etc) and also only select those games with clock and eval data (about 25% of them). From these I analysed the change in eval with every move, and the time at which that move was taken.
+I wrote a program to go through these games and filter them for various parameters (ELO, time controls, etc) and also only select those games with clock and eval data (about 2-5% of them). From these I analysed the change in eval with every move, and the time at which that move was taken.
 
 I defined a blunder the same way the lichess.org website does - a blunder is a move that results in a 200 [centipawn eval loss](https://en.wikipedia.org/wiki/Chess_piece_relative_value) according to the computer. There is a slight complication, which is that if you were already winning the game before your blunder, and you are still winning the game after your blunder, then the blunder doesnt count. This is the same method lichess uses.
 
