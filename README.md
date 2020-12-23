@@ -8,7 +8,7 @@ Examining blunder rates in 68 million games of online chess and confirming my su
 What is it?
 ----
 This is a series of graphs that illustrate the incidence of blunders (major unforced errors) in games of online chess for different ELO ratings and time controls.
-The y axis is the normalised blunder chance - the total number of blunders over the total number of all moves, and the x-axis is the time remaining (in seconds)
+The y axis is the normalised blunder chance - the total number of blunders over the total number of all moves, and the x-axis is the time remaining at the time of the blunder (in seconds)
 
 Results
 ---
